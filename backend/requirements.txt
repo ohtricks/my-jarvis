@@ -1,0 +1,26 @@
+# API e servidor
+fastapi==0.115.0
+uvicorn==0.30.0
+websockets==12.0
+python-multipart==0.0.9
+pydantic-settings==2.4.0
+
+# LLM
+ollama==0.3.0
+
+# STT - Speech to Text (Fase 2)
+faster-whisper==1.0.3
+sounddevice==0.5.1
+
+# TTS - Text to Speech (Fase 2 — requer Python 3.12)
+TTS==0.22.0
+
+# Ferramentas
+requests==2.32.0
+python-dotenv==1.0.0
+reportlab==4.2.0
+google-api-python-client==2.140.0
+
+# Utilidades
+pydantic==2.8.0
+numpy==1.26.4
