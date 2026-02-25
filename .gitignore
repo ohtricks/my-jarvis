@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Environment variables (secrets!)
+.env
+.env.local
+.env.*.local
+
+# Claude local settings (can contain sensitive permissions)
+.claude/settings.local.json
+
+# Audio/voice files (can be large)
+voices/*.mp3
+voices/*.wav
+voices/*.ogg
+voices/*.flac
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
