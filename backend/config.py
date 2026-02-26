@@ -10,10 +10,8 @@ class Settings(BaseSettings):
     whisper_model: str = "large-v3"
     whisper_language: str = "pt"
 
-    # TTS
-    tts_model: str = "tts_models/multilingual/multi-dataset/xtts_v2"
-    tts_language: str = "pt"
-    voice_sample_path: str = "./voices/jarvis_voice_sample.wav"
+    # TTS (Piper)
+    piper_model_path: str = "./models/piper/pt_BR-faber-medium.onnx"
 
     # Email (Gmail)
     gmail_user: str = ""

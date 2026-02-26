@@ -9,11 +9,13 @@ pydantic-settings==2.4.0
 ollama==0.3.0
 
 # STT - Speech to Text (Fase 2)
-faster-whisper==1.0.3
-sounddevice==0.5.1
+faster-whisper==1.2.1
+sounddevice==0.5.5
+soundfile==0.13.1
 
-# TTS - Text to Speech (Fase 2 — requer Python 3.12)
-TTS==0.22.0
+# TTS - Text to Speech (Fase 2 — Piper, 60MB, PT-BR nativo)
+piper-tts==1.4.1
+pathvalidate==3.2.1
 
 # Ferramentas
 requests==2.32.0

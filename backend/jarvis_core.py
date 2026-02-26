@@ -2,10 +2,12 @@ import json
 
 from llm.ollama_client import OllamaClient
 from memory.conversation import ConversationMemory
+from stt.whisper_stt import WhisperSTT
 from tools.email_tool import EmailTool
 from tools.report import ReportTool
 from tools.weather import WeatherTool
 from tools.web_search import WebSearchTool
+from tts.piper_tts import PiperTTS
 
 
 class JarvisCore:
@@ -13,8 +15,10 @@ class JarvisCore:
         print("🤖 Inicializando JARVIS...")
         self.llm = OllamaClient()
         self.memory = ConversationMemory(max_messages=20)
+        self.stt = WhisperSTT()
+        self.tts = PiperTTS()
 
-        # Ferramentas disponíveis (Fase 1)
+        # Ferramentas disponíveis
         weather = WeatherTool()
         email = EmailTool()
         report = ReportTool()
@@ -68,7 +72,7 @@ class JarvisCore:
         return response
 
     def process_text_stream(self, user_input: str):
-        """Versão streaming de process_text (para WebSocket)."""
+        """Streaming de resposta para WebSocket."""
         self.memory.add_user_message(user_input)
         full_response = ""
 
@@ -77,3 +81,23 @@ class JarvisCore:
             yield chunk
 
         self.memory.add_assistant_message(full_response)
+
+    def process_voice(self, duration: int = 5) -> tuple[str, str]:
+        """Grava voz, processa e responde em áudio. Retorna (texto_usuário, resposta)."""
+        user_text = self.stt.record_and_transcribe(duration=duration)
+        if not user_text:
+            return ("", "Não entendi. Pode repetir?")
+
+        print(f"Você (voz): {user_text}")
+        response = self.process_text(user_text)
+        print(f"JARVIS: {response}")
+        self.tts.speak_and_play(response)
+        return (user_text, response)
+
+    def process_audio_file(self, audio_path: str) -> tuple[str, str]:
+        """Transcreve arquivo de áudio e responde. Para uso via API REST."""
+        user_text = self.stt.transcribe_file(audio_path)
+        if not user_text:
+            return ("", "Não entendi o áudio enviado.")
+        response = self.process_text(user_text)
+        return (user_text, response)

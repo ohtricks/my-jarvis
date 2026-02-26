@@ -47,20 +47,31 @@ async def chat_text(payload: ChatRequest):
 @app.post("/chat/voice")
 async def chat_voice(audio: UploadFile = File(...)):
     """
-    Recebe arquivo de áudio WAV, transcreve (STT) e retorna resposta em áudio (TTS).
-    Requer Fase 2 para STT/TTS estar disponível.
+    Recebe arquivo de áudio WAV, transcreve com Whisper e retorna resposta em áudio (Piper TTS).
+    Headers de resposta: X-Transcription (o que o usuário disse), X-Response (resposta do JARVIS).
     """
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
         f.write(await audio.read())
         audio_path = f.name
 
+    response_audio_path = None
     try:
-        # Fase 2: usar jarvis.stt e jarvis.tts
-        return {
-            "error": "Endpoint de voz disponível na Fase 2 (requer STT + TTS instalados)."
-        }
+        user_text, response_text = jarvis.process_audio_file(audio_path)
+        response_audio_path = jarvis.tts.speak(response_text)
+
+        return FileResponse(
+            response_audio_path,
+            media_type="audio/wav",
+            headers={
+                "X-Transcription": user_text,
+                "X-Response": response_text,
+            },
+        )
+    except Exception as e:
+        return {"error": str(e)}
     finally:
         os.unlink(audio_path)
+        # response_audio_path é apagado pelo FileResponse após envio
 
 
 @app.delete("/memory")

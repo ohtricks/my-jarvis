@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/master.swiftdeps"
+  },
+  "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/Sources/JarvisApp/ContentView.swift": {
+    "dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ContentView.d",
+    "object": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ContentView.swift.o",
+    "swiftmodule": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ContentView.swiftdeps",
+    "diagnostics": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ContentView.dia"
+  },
+  "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/Sources/JarvisApp/JarvisApp.swift": {
+    "dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisApp.d",
+    "object": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisApp.swift.o",
+    "swiftmodule": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisApp~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisApp.swiftdeps",
+    "diagnostics": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisApp.dia"
+  },
+  "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/Sources/JarvisApp/Models/Message.swift": {
+    "dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/Message.d",
+    "object": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/Message.swift.o",
+    "swiftmodule": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/Message~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/Message.swiftdeps",
+    "diagnostics": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/Message.dia"
+  },
+  "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/Sources/JarvisApp/Services/JarvisService.swift": {
+    "dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisService.d",
+    "object": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisService.swift.o",
+    "swiftmodule": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisService~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisService.swiftdeps",
+    "diagnostics": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/JarvisService.dia"
+  },
+  "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/Sources/JarvisApp/Views/ChatBubble.swift": {
+    "dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ChatBubble.d",
+    "object": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ChatBubble.swift.o",
+    "swiftmodule": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ChatBubble~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ChatBubble.swiftdeps",
+    "diagnostics": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/ChatBubble.dia"
+  },
+  "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/Sources/JarvisApp/Views/VoiceButton.swift": {
+    "dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/VoiceButton.d",
+    "object": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/VoiceButton.swift.o",
+    "swiftmodule": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/VoiceButton~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/VoiceButton.swiftdeps",
+    "diagnostics": "/Volumes/m2 externo/my-projects/my-jarvis/JarvisApp/.build/arm64-apple-macosx/debug/JarvisApp.build/VoiceButton.dia"
+  }
+}
